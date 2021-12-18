@@ -8,13 +8,13 @@
 
 ---
 # Host Discovery
-| Switch | Example                 | Description                                |     |     |     |
+| Switch | Example                 | Description                                |   
 | ------ | ----------------------- | ------------------------------------------ | 
-| -sn    | nmap 192.168.1.1/24 -sn | Disable Port Scanning. Only host discovery |     |     |     |
-| -Pn    | nmap 192.168.1.1-5 -Pn  | Disable Host Discovery. Only port scanning |     |     |     |
-| -n     | nmap 192.168.1.1-5 -n   | Never Do ***DNS Resolution***              |     |     |     |
-| -PE    | nmap 192.168.1.1-5 -PE  | Enables ***ICMP echo*** request(ping scan) |     |     |     |
-| -PR    | nmap 192.168.1.1-5 -PR  | Arp Discovery on Local host                |     |     |     |
+| -sn    | nmap 192.168.1.1/24 -sn | Disable Port Scanning. Only host discovery |     
+| -Pn    | nmap 192.168.1.1-5 -Pn  | Disable Host Discovery. Only port scanning |    
+| -n     | nmap 192.168.1.1-5 -n   | Never Do ***DNS Resolution***              |   
+| -PE    | nmap 192.168.1.1-5 -PE  | Enables ***ICMP echo*** request(ping scan) |    
+| -PR    | nmap 192.168.1.1-5 -PR  | Arp Discovery on Local host                |    
 > ***Note:*** If you only use -sn without -PE, nmap uses ICMP requests, but will also send a TCP SYN packet on ports 80 and 443 of each host.
 ---
 # Service and Version Detection
