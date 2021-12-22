@@ -100,6 +100,9 @@ nmap --script smb-vuln* 192.168.1.16
 enum4linux 10.130.40.70
 
 ---
+> nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.240.155
+
+---
 # **[Source](https://www.hackingarticles.in/a-little-guide-to-smb-enumeration/)**
 
 https://www.hackingarticles.in/a-little-guide-to-smb-enumeration/

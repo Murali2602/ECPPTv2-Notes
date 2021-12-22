@@ -1,5 +1,11 @@
 # Initial Enumeration
 ---
+## Important Sources -
+> https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
+
+>https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_windows.html
+
+---
 ### -   **System Enumeration**
     
 - System Info -        
