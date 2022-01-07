@@ -11,7 +11,7 @@
 - In Immunity Debugger, type the following to set a working directory for mona.
 
 ```bash
-!mona config -set workingfolder c:\\mona\\%p
+!mona config -set workingfolder c:\mona\%p
 ```
 
 - Generate strings from [[Bytegen.py]] so you can copy it into [[Badchars.py]]
@@ -23,13 +23,13 @@
 - Generate strings in mona
 
 ```bash
-!mona bytearray -b '\\x00'
+!mona bytearray -b '\x00'
 ```
 
 - Run [[Badchars.py]] and it will crash, overwrite the ***EIP***, and also throw all those hex symbols into memory and see how the program deals with them. Fortunately, you can have Mona do the hard part for you, seeing if there are any discrepancies.
 
 ```bash
-!mona compare -f C:\\mona\\appname\\bytearray.bin -a <ESP>
+!mona compare -f C:\mona\appname\bytearray.bin -a <ESP>
 ```
 
 - Mona will spit out a comparison. If she tells you sequential symbols, she might be lieing. If she gives 07 and 08, only include 07 in the next iteration.

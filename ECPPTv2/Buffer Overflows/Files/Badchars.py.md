@@ -1,3 +1,4 @@
+```bash
 #!/usr/bin/env python3
 import socket
 
@@ -26,4 +27,4 @@ try:
   print("Done!")
 except:
   print("Could not connect.")
-
+```

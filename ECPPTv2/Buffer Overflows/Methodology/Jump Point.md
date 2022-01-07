@@ -9,7 +9,7 @@
 - Fortunately, that's easy in Immunity with Mona.
   
 ```bash
-!mona jmp -r esp -cpb "\\x00\\x0a\\x0d"
+!mona jmp -r esp -cpb "\x00\x0a\x0d"
 ```
 
 - This will return you a list of memory addresses that you can use. Pick one and save it. We'll need it in a second.

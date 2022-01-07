@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env python3
 
 import socket, time, sys
@@ -24,4 +25,4 @@ while True:
     sys.exit(0)
   string += 100 * "A"
   time.sleep(1)
-
+```
