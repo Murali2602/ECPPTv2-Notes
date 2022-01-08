@@ -75,36 +75,38 @@ Dictionary_Name["Test1"] = "This is gonna replace the existing stuff"
 
 We can nest ***Lists and Dictionaries*** inside ***Dictionaries.***
 - #### Nesting a List inside Dictionary -
-  ```python
-travel_log = {
-	 "France" : ["Paris", "Lille", "Dijon"],
-	 "Germany" : ["Berlin", "Hamburg", "Stuttgart"],
- }
-print(travel_log)
-```
+>```python
+>travel_log = {
+>	 "France" : ["Paris", "Lille", "Dijon"],
+>	 "Germany" : ["Berlin", "Hamburg", "Stuttgart"],
+ >}
+>print(travel_log)
+>```
 	
 - #### Nesting a Dictionary inside a Dictionary - 
-   ```python
-travel_log = {  
- "France" : {"cities_visited": ["Paris", "Lille", "Dijon"], "visits": 12, "People": ["Murali","Kajal"]},  
- "Germany" : ["Berlin", "Hamburg", "Stuttgart"],  
-}  
-print(travel_log)
-   ``` 
+> ```python
+>travel_log = {  
+ >"France" : {"cities_visited": ["Paris", "Lille", "Dijon"],
+ >"visits": 12, "People": ["Murali","Kajal"]},  
+>"Germany" : ["Berlin", "Hamburg", "Stuttgart"],  
+>}  
+>print(travel_log)
+>``` 
    
 - #### Nesting a Dictionary inside a List - 
-   ```python
-travel_log = [  
-   {
-	   "country":"France",
-	   "cities_visited" : ["Paris", "Lille", "Dijon"],
-	   "visits": 12,
-	   "People": ["Murali","Mohan","Kajal"]
-   },  
- {"country":"Germany",
-  "cities_visited":["Berlin", "Hamburg", "Stuttgart"]
- },  
-]  
-for list in travel_log:  
-   print(list)
+>  ```python
+>travel_log = [  
+>  {
+>	   "country":"France",
+>	   "cities_visited" : ["Paris", "Lille", "Dijon"],
+>	   "visits": 12,
+>	   "People": ["Murali","Mohan","Kajal"]
+>   },  
+>{
+>"country":"Germany",
+>  "cities_visited":["Berlin", "Hamburg", "Stuttgart"]
+> },  
+>]  
+>for list in travel_log:  
+>      print(list)
    
