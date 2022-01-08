@@ -75,12 +75,12 @@ Dictionary_Name["Test1"] = "This is gonna replace the existing stuff"
 
 We can nest ***Lists and Dictionaries*** inside ***Dictionaries.***
 - #### Nesting a List inside Dictionary -
-	```python
- travel_log = {
+   ```python
+travel_log = {
 	 "France" : ["Paris", "Lille", "Dijon"],
 	 "Germany" : ["Berlin", "Hamburg", "Stuttgart"],
  }
- print(travel_log)
+print(travel_log)
 	```
 	
 - #### Nesting a Dictionary inside a Dictionary - 
