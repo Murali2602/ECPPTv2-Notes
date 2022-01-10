@@ -20,7 +20,7 @@
 	 >    
 	 >    lname = input("Enter your Last Name: \n")
 	 >   
-	 >     return fname+" "+lname
+	 >    return fname+" "+lname
 	 >    
 	 >name = format().title()
 	 >print(name)
