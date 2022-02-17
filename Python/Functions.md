@@ -19,7 +19,7 @@ def add(x,y):   #x and y are called parameters
 add(4, 6)  #4 and 6 are called arguments
 ```
 
-- ##### Keyword Arguments 
+- ### Keyword Arguments 
 ```python
 def person(name,age):
 	print(name)
@@ -29,7 +29,7 @@ def person(name,age):
 person(name='Murali', age=18)  # Here name= and age= are called as keyword parameters. 
 ```
 
-- ##### Default Parameters
+- ### Default Parameters
 ```python
 def person(name,age=18): # Here age= is known as default parameter.
 	print(name)
@@ -39,7 +39,7 @@ def person(name,age=18): # Here age= is known as default parameter.
 person('Murali') # If you do not specify the age= value it will still work since u have given a default parameter in the function already(18).
 ```
 
-- ##### Variable Length Parameters 
+- ### Variable Length Parameters 
 
 ```python
 def sum(a,*b):  #'*b' here is known as variable length parameter meaning you can give as many arguments as you want to parameter b and it will store everything in a tuple so this would look something like (25,123,123414,12313), i didn't include 26 since it is assigned to 'a'.
@@ -55,10 +55,10 @@ def sum(a,*b):  #'*b' here is known as variable length parameter meaning you can
 sum(26,25,123,123414,12313)
 ```
 
-> **Output**:  
+**Output**:  
 > ![Nothing](https://i.imgur.com/3z9LxY9.png)
 
-- ##### Keyword Variable Length Arguments(**kwargs)
+- ### Keyword Variable Length Arguments(**kwargs)
 ```python
 def person(name, **data): #We use ** to specify Keyword Variable Length Arguments.
 	print(name)
@@ -68,7 +68,7 @@ def person(name, **data): #We use ** to specify Keyword Variable Length Argument
 
 person('Murali',age=18,city='Bangalore',mob=123456789) #These are known as Keyword arguments.
 ```
-> **Output**:
+**Output**: 
 > ![example](https://i.imgur.com/VGWFAaP.png)
 ## Global vs Local Scope
 ```python
@@ -82,7 +82,7 @@ something()
 print(a)
 #Note: You can't print/access a 'local' variable outside the function but you can access 'global' variable inside a function.
 ```
->**Output:**
+**Output:**
 > ![example](https://i.imgur.com/qcP1v65.png)
 
 
@@ -96,9 +96,9 @@ def something():
 	print(a)
 	
 something()
-print(a) #Here output of 'a' will be 8 since we changed the value to 8 inside the function which was called globally.
+print(a) #Here  of 'a' will be 8 since we changed the value to 8 inside the function which was called globally.
 ```
-> **Output:**
+**Output:**
 >  ![example](https://i.imgur.com/1afysmR.png)
 
 To access a global variable inside a function but have a local variable too(even if it has the same name):
@@ -119,7 +119,7 @@ something()
 print(a)
 #Note: This way we can use 'a' as both local variable and a global variable.
 ```
-> **Output:**
+**Output:**
 > ![example](https://i.imgur.com/69AndBv.png)
 
 ## Return vs Print
@@ -130,7 +130,7 @@ Print is used to print out the things inside the function.
 def test():
 	print('Hello World')
   	
-test() #This will output 'Hello World'
+test() #This will  'Hello World'
 ```
 
 #### Return - 
@@ -140,13 +140,14 @@ Return is used to store the value inside the function.
 def format():
 	fname = input("Enter your First Name: \n")    
 	lname = input("Enter your Last Name: \n")   
-	return fname+" "+lname    
+	return fname+" "+lname  #Return will store the output as a value inside format() function. 
 
-name = format().title()
+name = format()
 print(name)
+#If the input was 'Jake Peralta', the value of format() would be 'Jake Peralta'.
 ```
 	
-Here ***format()*** is stored as the value of return. So for example, if the input was ***MuRALI RAMACHANDRA***, the output would be ***Murali Ramachandra*** where value of format() is **Murali Ramachandra.**
+
 
 
 	
