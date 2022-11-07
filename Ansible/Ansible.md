@@ -5,7 +5,7 @@
 2. Copy this SSH key onto nodes  - `ssh-copy-id ~/.ssh/ansible <node-ip>`
 3. Check the connection to nodes is working successfully - `ansible all -key-file ~/.ssh/ansible -i inventory -m ping` (Note - You should get a success or green colored output) 
 4. Run `ssh-agent bash` & `ssh-add ~/.ssh/ansible`
-5. Create an [[ansible.cfg]] file 
+5. Create an [ansible.cfg](https://github.com/Murali2602/Notes/blob/main/Ansible/Files/basic-playbook.yml) file 
 
 
 ## Ad-hoc commands - 
