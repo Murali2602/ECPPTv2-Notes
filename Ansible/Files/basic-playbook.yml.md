@@ -1,0 +1,47 @@
+```
+---  
+  
+- hosts: all             
+ become: true           
+ tasks:                 
+  
+  
+   ##Debian     
+ - name: Update repository         
+   apt:  
+     update_cache: yes  
+   when: ansible_distribution == "Debian"  
+  
+   ##CentOS  
+ - name: Update repository  
+   yum:  
+     update_cache: yes  
+   when: ansible_distribution == "CentOS"  
+  
+  
+  
+- hosts: Debian  
+ become: true  
+ tasks:  
+  
+ - name: Install Packages  
+   apt:                          
+     name:    
+       - apache2                
+       - vim  
+     state: latest  
+   when: ansible_distribution == "Debian"  
+  
+  
+- hosts: CentOS  
+ become: true  
+ tasks:    
+  
+ - name: Install Packages  
+   yum:  
+     name:    
+       - httpd  
+       - php  
+     state: latest  
+   when: ansible_distribution == "CentOS"
+```
