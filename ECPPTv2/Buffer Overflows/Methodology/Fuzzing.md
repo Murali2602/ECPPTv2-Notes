@@ -1,6 +1,6 @@
 # Fuzzing
 ---
-- We are going to*** Fuzz*** the application to find the approximate value of bytes at which the program crashes.
+- We are going to *** Fuzz*** the application to find the approximate value of bytes at which the program crashes.
 
 - Restart Immunity by using the Rewind button next to the red play arrow at the top. (Or Ctrl+F2)
 

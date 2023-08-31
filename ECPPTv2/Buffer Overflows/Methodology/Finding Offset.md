@@ -24,4 +24,5 @@
 ```
 
 - You can also check that offset with Mona.
+`!mona findmsp -distance 600`
 
