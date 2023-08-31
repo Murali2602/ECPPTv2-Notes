@@ -1,4 +1,3 @@
-
 ```bash
 #!/usr/bin/python
 from __future__ import print_function
@@ -36,4 +35,3 @@ try:
 except:  
        print("Error connecting to server")  
        sys.exit()
-```
